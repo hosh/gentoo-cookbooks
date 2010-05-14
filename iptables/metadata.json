@@ -1,0 +1,33 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+      "iptables::ulogd": "Installs ulogd"
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+      "gentoo": [
+
+      ]
+    },
+    "providing": {
+    },
+    "description": "Installs and configures iptables",
+    "attributes": {
+    },
+    "replacing": {
+    },
+    "version": "0.1.0",
+    "dependencies": {
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "iptables",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }

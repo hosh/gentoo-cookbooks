@@ -1,0 +1,43 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+    },
+    "providing": {
+    },
+    "description": "Helps to manage passwords",
+    "attributes": {
+      "password/directory": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Store locally generated passwords in this directory (passwords are not persisted if empty)",
+        "display_name": "Password directory"
+      }
+    },
+    "replacing": {
+    },
+    "version": "0.1.0",
+    "dependencies": {
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "password",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }

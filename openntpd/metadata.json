@@ -1,0 +1,62 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+      "gentoo": [
+
+      ]
+    },
+    "providing": {
+    },
+    "description": "Sets up and configures openntpd server",
+    "attributes": {
+      "ntpd/listen_on": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": [
+
+        ],
+        "type": "array",
+        "recipes": [
+
+        ],
+        "description": "Addresses to listen on (e.g. *, 1.2.3.4, ::1)",
+        "display_name": "Listen on"
+      },
+      "ntpd/pool": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "pool.ntp.org",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "NTP pool to sync to",
+        "display_name": "Pool"
+      }
+    },
+    "replacing": {
+    },
+    "version": "0.1.0",
+    "dependencies": {
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "openntpd",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }

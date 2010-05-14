@@ -1,0 +1,32 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+    },
+    "providing": {
+    },
+    "description": "Installs and configures sudo",
+    "attributes": {
+    },
+    "replacing": {
+    },
+    "version": "0.1.0",
+    "dependencies": {
+      "gentoo": [
+
+      ]
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "sudo",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }

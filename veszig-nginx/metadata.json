@@ -1,0 +1,124 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+      "gentoo": [
+
+      ]
+    },
+    "providing": {
+    },
+    "description": "Installs and configures Nginx",
+    "attributes": {
+      "nginx/worker_connections": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "8192",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "max_clients = worker_processes * worker_connections",
+        "display_name": "Worker Connections"
+      },
+      "nginx/fastcgi": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "false",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Enable FastCGI support in Nginx",
+        "display_name": "Nginx FastCGI support"
+      },
+      "nginx/keepalive_timeout": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "75 20",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Timeout for keep-alive connections with the client",
+        "display_name": "Keepalive Timeout"
+      },
+      "nginx/worker_processes": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "$cpu_total",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "max_clients = worker_processes * worker_connections",
+        "display_name": "Worker Processes"
+      },
+      "nginx/passenger": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "false",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Enable Passenger support in Nginx",
+        "display_name": "Nginx Passenger support"
+      },
+      "nginx/ports": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": [
+
+        ],
+        "type": "array",
+        "recipes": [
+
+        ],
+        "description": "List of ports nginx should listen on",
+        "display_name": "Nginx ports"
+      }
+    },
+    "replacing": {
+    },
+    "version": "0.1.0",
+    "dependencies": {
+      "php": [
+
+      ],
+      "openssl": [
+
+      ]
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "veszig-nginx",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }

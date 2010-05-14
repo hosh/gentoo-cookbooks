@@ -1,0 +1,183 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+      "gentoo": [
+
+      ]
+    },
+    "providing": {
+    },
+    "description": "Installs and configures PHP",
+    "attributes": {
+      "php/upload_max_filesize": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "20M",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "php.ini upload_max_filesize",
+        "display_name": "php.ini upload_max_filesize"
+      },
+      "php/memory_limit": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "128M",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "php.ini memory_limit",
+        "display_name": "php.ini memory_limit"
+      },
+      "php/cgi": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "false",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Enable CGI support in PHP",
+        "display_name": "PHP CGI support"
+      },
+      "php/use_flags": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": [
+          "bcmath",
+          "berkdb",
+          "bzip2",
+          "calendar",
+          "cli",
+          "crypt",
+          "ctype",
+          "curl",
+          "exif",
+          "expat",
+          "ftp",
+          "gd",
+          "gdbm",
+          "hash",
+          "inifile",
+          "mcal",
+          "memlimit",
+          "mhash",
+          "pdo",
+          "reflection",
+          "session",
+          "simplexml",
+          "sockets",
+          "spl",
+          "suhosin",
+          "sysvipc",
+          "tokenizer",
+          "truetype",
+          "unicode",
+          "wddx",
+          "xml",
+          "xmlrpc",
+          "xsl",
+          "zip",
+          "zlib"
+        ],
+        "type": "array",
+        "recipes": [
+
+        ],
+        "description": "PHP USE flags",
+        "display_name": "PHP USE flags"
+      },
+      "php/post_max_size": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "20M",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "php.ini post_max_size",
+        "display_name": "php.ini post_max_size"
+      },
+      "php/allow_url_fopen": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "false",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "php.ini allow_url_fopen",
+        "display_name": "php.ini allow_url_fopen"
+      },
+      "php/max_execution_time": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "30",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "php.ini max_execution_time",
+        "display_name": "php.ini max_execution_time"
+      },
+      "php/open_basedir": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "php.ini open_basedir",
+        "display_name": "php.ini open_basedir"
+      }
+    },
+    "replacing": {
+    },
+    "version": "0.1.0",
+    "dependencies": {
+      "gentoo": [
+
+      ]
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "php",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }

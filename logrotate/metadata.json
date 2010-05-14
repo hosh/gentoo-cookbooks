@@ -1,0 +1,35 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+      "gentoo": [
+
+      ]
+    },
+    "providing": {
+    },
+    "description": "Installs logrotate",
+    "attributes": {
+    },
+    "replacing": {
+    },
+    "version": "0.1.0",
+    "dependencies": {
+      "gentoo": [
+
+      ]
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "logrotate",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }

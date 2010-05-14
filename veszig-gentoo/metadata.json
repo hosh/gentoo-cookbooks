@@ -1,0 +1,387 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+      "gentoo::hardened": "Hardened Gentoo modifications",
+      "gentoo::portage": "Portage specific configuration files",
+      "gentoo": "Basic gentoo configuration"
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+      "gentoo": [
+
+      ]
+    },
+    "providing": {
+    },
+    "description": "Sets up gentoo specific config files and directories",
+    "attributes": {
+      "gentoo/use_expands": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": {
+        },
+        "type": "hash",
+        "recipes": [
+
+        ],
+        "description": "Arrays of USE_EXPANDS (e.g. NGINX_MODULES)",
+        "display_name": "USE_EXPANDs"
+      },
+      "gentoo/emerge_options": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": [
+          "--verbose"
+        ],
+        "type": "array",
+        "recipes": [
+
+        ],
+        "description": "Default options passed to emerge",
+        "display_name": "make.conf EMERGE_DEFAULT_OPTS"
+      },
+      "gentoo/portage_binhost": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Host from which portage will grab prebuilt-binary packages",
+        "display_name": "make.conf PORTAGE_BINHOST"
+      },
+      "gentoo/elog_mailuri": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Recipient and SMTP server for elog emails",
+        "display_name": "make.conf ELOG_MAILURI"
+      },
+      "gentoo/portage_features": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": [
+          "sandbox",
+          "sfperms",
+          "strict",
+          "buildpkg",
+          "parallel-fetch"
+        ],
+        "type": "array",
+        "recipes": [
+
+        ],
+        "description": "Actions portage takes by default",
+        "display_name": "make.conf FEATURES"
+      },
+      "gentoo/distfile_mirrors": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": [
+          "http://gentoo.osuosl.org/"
+        ],
+        "type": "array",
+        "recipes": [
+
+        ],
+        "description": "Distfile mirrors",
+        "display_name": "make.conf GENTOO_MIRRORS"
+      },
+      "gentoo/elog_mailfrom": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "portage@$fqdn",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Sender email for elog emails",
+        "display_name": "make.conf ELOG_MAILFROM"
+      },
+      "gentoo/sysctl": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": {
+          "net.ipv4.conf.default.accept_redirects": 0,
+          "net.ipv4.conf.all.rp_filter": 1,
+          "net.ipv4.icmp_echo_ignore_broadcasts": 1,
+          "net.ipv4.conf.default.log_martians": 1,
+          "net.ipv4.conf.default.rp_filter": 1,
+          "net.ipv4.icmp_ignore_bogus_error_responses": 1,
+          "kernel.shmmax": 83886080,
+          "net.ipv4.conf.default.accept_source_route": 0,
+          "kernel.panic": 60
+        },
+        "type": "hash",
+        "recipes": [
+
+        ],
+        "description": "sysctl keys and values",
+        "display_name": "sysctl.conf"
+      },
+      "gentoo/locales": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": [
+          "en_US ISO-8859-1",
+          "en_US.UTF-8 UTF-8"
+        ],
+        "type": "array",
+        "recipes": [
+
+        ],
+        "description": "Locales to generate",
+        "display_name": "locale.gen"
+      },
+      "gentoo/synchwclock": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "true",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Set the hardware clock to the system time during shutdown",
+        "display_name": "conf.d/clock CLOCK_SYSTOHC"
+      },
+      "gentoo/makeopts": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "-j$cpunr+1",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Options for parallel make",
+        "display_name": "make.conf MAKEOPTS"
+      },
+      "gentoo/timezone": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "UTC",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Timezone",
+        "display_name": "Timezone"
+      },
+      "gentoo/hwtimezone": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "UTC",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Timezone of the hardware clock (UTC or local)",
+        "display_name": "Hardware Timezone"
+      },
+      "gentoo/rsync_mirror": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "rsync://rsync.gentoo.org/gentoo-portage",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Rsync mirror used for emerge --sync",
+        "display_name": "make.conf SYNC"
+      },
+      "gentoo/accept_licenses": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": [
+
+        ],
+        "type": "array",
+        "recipes": [
+
+        ],
+        "description": "Mask packages based on licensing restrictions",
+        "display_name": "make.conf ACCEPT_LICENSE"
+      },
+      "gentoo/cflags": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "-march=native -O2 -pipe",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "C compiler flags",
+        "display_name": "make.conf CFLAGS"
+      },
+      "gentoo/use_flags": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": [
+          "-*",
+          "acl",
+          "berkdb",
+          "bzip2",
+          "cracklib",
+          "crypt",
+          "cxx",
+          "fam",
+          "fortran",
+          "gdbm",
+          "glibc-omitfp",
+          "gnutls",
+          "iconv",
+          "idn",
+          "mmx",
+          "modules",
+          "mudflap",
+          "multilib",
+          "ncurses",
+          "nls",
+          "nptl",
+          "nptlonly",
+          "openmp",
+          "pam",
+          "pcre",
+          "posix",
+          "readline",
+          "sse",
+          "sse2",
+          "ssl",
+          "sysfs",
+          "sysvipc",
+          "threads",
+          "threadsafe",
+          "unicode",
+          "urandom",
+          "xml",
+          "zlib"
+        ],
+        "type": "array",
+        "recipes": [
+
+        ],
+        "description": "Global USE flags",
+        "display_name": "make.conf USE"
+      },
+      "gentoo/profile": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "default/linux/$arch/10.0",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Relative path of the gentoo profile",
+        "display_name": "Gentoo Profile (/etc/make.profile)"
+      },
+      "gentoo/collision_ignores": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": [
+
+        ],
+        "type": "array",
+        "recipes": [
+
+        ],
+        "description": "Files and directories for which collision-protect is disabled",
+        "display_name": "make.conf COLLISION_IGNORE"
+      },
+      "gentoo/overlay_directories": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": [
+
+        ],
+        "type": "array",
+        "recipes": [
+
+        ],
+        "description": "Directories in which external ebuilds are stored",
+        "display_name": "make.conf PORTDIR_OVERLAY"
+      }
+    },
+    "replacing": {
+    },
+    "version": "0.2.0",
+    "dependencies": {
+      "eix": [
+
+      ]
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "veszig-gentoo",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }

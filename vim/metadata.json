@@ -1,0 +1,35 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+      "gentoo": [
+
+      ]
+    },
+    "providing": {
+    },
+    "description": "Installs vim",
+    "attributes": {
+    },
+    "replacing": {
+    },
+    "version": "0.1.0",
+    "dependencies": {
+      "gentoo": [
+
+      ]
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "vim",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }

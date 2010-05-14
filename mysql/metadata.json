@@ -1,0 +1,82 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+      "mysql::client": "Installs and configures MySQL client",
+      "mysql::server": "Installs and configures MySQL server"
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+      "gentoo": [
+
+      ]
+    },
+    "providing": {
+    },
+    "description": "Installs and configures MySQL",
+    "attributes": {
+      "mysql/root_password": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "MySQL root password (leave empty if you want to generate and store it locally)",
+        "display_name": "MySQL root password"
+      },
+      "mysql/encoding": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "utf8",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Default encoding used in MySQL server and client",
+        "display_name": "MySQL encoding"
+      },
+      "mysql/server_address": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "127.0.0.1",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Address of the MySQL server where the client will connect to by default",
+        "display_name": "MySQL server address"
+      }
+    },
+    "replacing": {
+    },
+    "version": "0.1.0",
+    "dependencies": {
+      "gentoo": [
+
+      ],
+      "password": [
+
+      ]
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "mysql",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }

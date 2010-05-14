@@ -1,0 +1,60 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+      "gentoo": [
+
+      ]
+    },
+    "providing": {
+    },
+    "description": "Installs git",
+    "attributes": {
+      "git/client/subversion": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "false",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Subversion support for git",
+        "display_name": "git-svn"
+      },
+      "git/client/cvs": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "false",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "CVS support for git",
+        "display_name": "git-cvsimport"
+      }
+    },
+    "replacing": {
+    },
+    "version": "0.1.0",
+    "dependencies": {
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "git",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }

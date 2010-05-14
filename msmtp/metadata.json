@@ -1,0 +1,88 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+      "gentoo": [
+
+      ]
+    },
+    "providing": {
+    },
+    "description": "Installs and configures msmtp",
+    "attributes": {
+      "msmtp/password": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "SMTP password for authentication",
+        "display_name": "SMTP password"
+      },
+      "msmtp/from": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "blachole@$fqdn",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Default enverlope-from address",
+        "display_name": "SMTP from"
+      },
+      "msmtp/user": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "SMTP user for authentication",
+        "display_name": "SMTP user"
+      },
+      "msmtp/host": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "smtp.$domain",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Outgoing SMTP host",
+        "display_name": "SMTP host"
+      }
+    },
+    "replacing": {
+    },
+    "version": "0.1.0",
+    "dependencies": {
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "msmtp",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }

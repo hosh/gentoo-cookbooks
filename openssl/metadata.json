@@ -1,0 +1,79 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+      "openssl": "Installs OpenSSL",
+      "openssl::host_cert": "Generates a self signed certificate for the host"
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+      "gentoo": [
+
+      ]
+    },
+    "providing": {
+    },
+    "description": "Installs OpenSSL",
+    "attributes": {
+      "ssl/remote_host_cert_name": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "$fqdn",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Name of the host certificate remote_files",
+        "display_name": "Host certificate name"
+      },
+      "ssl/self_signed_request_subject": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "/CN=$fqdn",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "The subject of the requested certificate",
+        "display_name": "Request Subject"
+      },
+      "ssl/self_signed_host_cert": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "true",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Generate a self-signed cert? (or get one via remote_file)",
+        "display_name": "Self-signed host certificate"
+      }
+    },
+    "replacing": {
+    },
+    "version": "0.1.0",
+    "dependencies": {
+      "gentoo": [
+
+      ]
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "openssl",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }

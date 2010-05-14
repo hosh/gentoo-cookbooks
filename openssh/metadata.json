@@ -1,0 +1,92 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+      "gentoo::known_hosts": "Sets up global known_hosts file",
+      "gentoo": "Basic opensshd configuration"
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+      "gentoo": [
+
+      ]
+    },
+    "providing": {
+    },
+    "description": "Sets up and configures an openssh server",
+    "attributes": {
+      "sshd/port": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "22",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Port sshd listens on",
+        "display_name": "sshd_config Port"
+      },
+      "sshd/password_auth": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "true",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Permit password based authentication",
+        "display_name": "sshd_config PasswordAuthentication"
+      },
+      "sshd/allow_users": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": [
+
+        ],
+        "type": "array",
+        "recipes": [
+
+        ],
+        "description": "List of users permitted to login (if empty, everyone is allowed)",
+        "display_name": "sshd_conf AllowUsers"
+      },
+      "sshd/permit_root_login": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "false",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Permit root login",
+        "display_name": "sshd_config PermitRootLogin"
+      }
+    },
+    "replacing": {
+    },
+    "version": "0.1.0",
+    "dependencies": {
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "openssh",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }

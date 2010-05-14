@@ -1,0 +1,126 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+      "gentoo": [
+
+      ]
+    },
+    "providing": {
+    },
+    "description": "Sets up and configures net-snmp server",
+    "attributes": {
+      "snmpd/community": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "public",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "SNMP Community name",
+        "display_name": "Community"
+      },
+      "snmpd/monitoring_ips": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": [
+          "127.0.0.1"
+        ],
+        "type": "array",
+        "recipes": [
+
+        ],
+        "description": "IP addresses allowed to access the snmp server",
+        "display_name": "Monitoring IP addresses"
+      },
+      "snmpd/disks": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": [
+          "/mounted",
+          "/partitions"
+        ],
+        "type": "array",
+        "recipes": [
+
+        ],
+        "description": "Disks to monitor",
+        "display_name": "Disks"
+      },
+      "snmpd/execs": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": [
+
+        ],
+        "type": "array",
+        "recipes": [
+
+        ],
+        "description": "External exec calls",
+        "display_name": "Execs"
+      },
+      "snmpd/syslocation": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "here",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "System location",
+        "display_name": "System location"
+      },
+      "snmpd/syscontact": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "root <root@$domain>",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "System contact",
+        "display_name": "System contact"
+      }
+    },
+    "replacing": {
+    },
+    "version": "0.1.0",
+    "dependencies": {
+      "gentoo": [
+
+      ]
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "net-snmp",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }

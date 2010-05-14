@@ -1,0 +1,123 @@
+{
+    "suggestions": {
+    },
+    "license": "Apache 2.0",
+    "recipes": {
+      "chef::server": "Chef Server configuration",
+      "chef::webui": "Chef WebUI configuration",
+      "chef::server_proxy": "Nginx SSL proxy for Chef Server",
+      "chef::webui_proxy": "Nginx SSL proxy for Chef WebUI",
+      "chef::overlay": "Installs the Chef gentoo overlay",
+      "chef::client": "Chef Client configuration"
+    },
+    "maintainer_email": "veszig@done.hu",
+    "conflicting": {
+    },
+    "platforms": {
+      "gentoo": [
+
+      ]
+    },
+    "providing": {
+    },
+    "description": "Installs and configures Chef Client and Server",
+    "attributes": {
+      "chef/server/webui_proxy_port": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "4483",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Nginx SSL proxy for the Chef WebUI listens on this port",
+        "display_name": "Chef Server Proxy port"
+      },
+      "chef/syslog": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "false",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Log to syslog",
+        "display_name": "Log to syslog"
+      },
+      "chef/server/server_proxy_port": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "4443",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Nginx SSL proxy for the Chef Server listens on this port",
+        "display_name": "Chef Server Proxy port"
+      },
+      "chef/client/server_url": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "http://chef.$domain:4000",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "Public URL of the Chef server",
+        "display_name": "Chef Server URL"
+      },
+      "chef/server/amqp_pass": {
+        "required": "optional",
+        "calculated": false,
+        "choice": [
+
+        ],
+        "default": "testing",
+        "type": "string",
+        "recipes": [
+
+        ],
+        "description": "The password set in RabbitMQ",
+        "display_name": "AMQP password"
+      }
+    },
+    "replacing": {
+    },
+    "version": "0.1.0",
+    "dependencies": {
+      "couchdb": [
+
+      ],
+      "nginx": [
+
+      ],
+      "git": [
+
+      ],
+      "gentoo": [
+
+      ],
+      "rabbitmq": [
+
+      ]
+    },
+    "groupings": {
+    },
+    "long_description": "",
+    "name": "chef",
+    "recommendations": {
+    },
+    "maintainer": "Gábor Vészi"
+  }
